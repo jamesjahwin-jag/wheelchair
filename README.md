@@ -82,8 +82,5 @@ It will be subsequently worked on.
 ## 🤝 Credits
 
 * **Author:** Jahwin James James
-* **Tooling:** URDF created with reference to Blender 4.5.6 using the [Linkforge Extension](https://github.com/arounamounchili/linkforge).
 
 ---
-
-**Would you like me to add a section on how to troubleshoot common Gazebo errors or how to customize the wheelchair colors?**
