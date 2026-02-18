@@ -1,6 +1,6 @@
 ## Wheelchair Description & Simulation
 
-This repository contains two folders: wheelchair-95.snapshot.8 and wheelchair_ws. The former (wheelchair-95) contains all the 3D CAD files for a wheelchair gotten from Grabcad and can be opened using Freecad, in case what you want to see what the parts look like or to experiment with it. The latter, wheelchair_ws, is the main area of concern, it contains all the files you need to launch the assembled wheelchair in Rviz and Gazebo. This project is part of an overarcing project at Aurora Robotics to apply robotics to medical assistive tools, in this case, a wheelchair.
+This repository contains two folders: wheelchair-95.snapshot.8 and wheelchair_ws. The former (wheelchair-95) contains all the 3D CAD files for a wheelchair gotten from Grabcad and can be opened using Freecad, in case you want to see what the parts look like or to experiment with it. The latter, wheelchair_ws, is the main area of concern, it contains all the files you need to launch the assembled wheelchair in Rviz and Gazebo. This project is part of an overarcing project at Aurora Robotics to apply robotics to medical assistive tools, in this case, a wheelchair.
 
 ## 🚀 Features
 
