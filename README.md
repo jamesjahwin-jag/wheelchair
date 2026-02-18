@@ -5,7 +5,7 @@ This repository contains two folders: wheelchair-95.snapshot.8 and wheelchair_ws
 ## 🚀 Features
 
 * **XACRO-based modeling:** Modular robot description for easy parameter adjustments (mass, inertia, wheel separation).
-* **Gazebo Integration:** Includes physics properties (, ) and the `libgazebo_ros_diff_drive` plugin.
+* **Gazebo Integration:** Includes physics properties and the `libgazebo_ros_diff_drive` plugin.
 * **Visual Fidelity:** Utilizes high-quality STL meshes exported from Blender 4.5.6.
 * **Partially Stabilized Physics:** Optimized mass and inertia values to prevent "jumping" and numerical instability in ODE.
 
@@ -49,6 +49,8 @@ To launch the wheelchair in Rviz:
 ```
 ros2 launch urdf_tutorial display.launch.py model:=$PWD/wheelchair_description/urdf/wheelchairtest.xacro
 ```
+This is what you'll see:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9e5a664a-b092-4bde-b5de-97f2d3a0cb3d" />
 
 To launch the wheelchair in an empty Gazebo world:
 ```
@@ -57,7 +59,7 @@ ros2 launch wheelchair_description wheelchair_gazebo.launch.py
 
 ---
 
-## 📂 Project Structure
+## 📂 Main Project Structure
 
 ```
 wheelchair_description/
