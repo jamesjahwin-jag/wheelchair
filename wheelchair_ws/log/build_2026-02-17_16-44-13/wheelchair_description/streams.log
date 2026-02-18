@@ -1,0 +1,135 @@
+[0.069s] Invoking command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/wheelchair_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description
+[1.055s] -- The C compiler identification is GNU 11.4.0
+[1.685s] -- The CXX compiler identification is GNU 11.4.0
+[1.990s] -- Detecting C compiler ABI info
+[4.820s] -- Detecting C compiler ABI info - done
+[4.926s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[4.934s] -- Detecting C compile features
+[4.938s] -- Detecting C compile features - done
+[5.173s] -- Detecting CXX compiler ABI info
+[7.816s] -- Detecting CXX compiler ABI info - done
+[7.894s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[7.897s] -- Detecting CXX compile features
+[7.900s] -- Detecting CXX compile features - done
+[8.156s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[8.746s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[9.128s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.585s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[14.523s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.979s] -- Added test 'lint_cmake' to check CMake code style
+[15.197s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[17.891s] -- Added test 'xmllint' to check XML markup files
+[18.074s] -- Configuring done
+[18.716s] -- Generating done
+[19.619s] -- Build files have been written to: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description
+[19.630s] Invoked command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/wheelchair_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description
+[19.706s] Invoking command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description -- -j12 -l12
+[20.217s] Invoked command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description -- -j12 -l12
+[20.406s] Invoking command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description
+[20.442s] -- Install configuration: ""
+[20.534s] -- Execute custom install script
+[20.788s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//launch/wheelchair_gazebo.launch.py
+[22.158s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_collision.stl
+[22.190s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.mtl
+[22.218s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.obj
+[22.252s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.stl
+[22.278s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_collision.stl
+[22.305s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.mtl
+[22.332s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.obj
+[22.361s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.stl
+[22.388s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_collision.stl
+[22.415s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.mtl
+[22.444s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.obj
+[22.470s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.stl
+[22.496s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_collision.stl
+[22.524s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.mtl
+[22.550s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.obj
+[22.578s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.stl
+[22.684s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_collision.stl
+[22.820s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.mtl
+[22.948s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.obj
+[23.073s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.stl
+[23.103s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_collision.stl
+[23.131s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.mtl
+[23.158s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.obj
+[23.185s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.stl
+[23.212s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_caster_collision.stl
+[23.240s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_caster_visual.stl
+[23.297s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_collision.stl
+[23.358s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.mtl
+[23.428s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.obj
+[23.482s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.stl
+[23.596s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_handle_collision.stl
+[23.633s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_handle_visual.stl
+[23.661s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_collision.stl
+[23.689s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.mtl
+[23.722s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.obj
+[23.749s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.stl
+[23.776s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pedal_collision.stl
+[23.802s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pedal_visual.stl
+[23.831s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_collision.stl
+[23.858s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.mtl
+[23.886s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.obj
+[23.913s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.stl
+[23.942s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_collision.stl
+[23.969s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.mtl
+[23.995s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.obj
+[24.022s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.stl
+[24.069s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_collision.stl
+[24.179s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.mtl
+[24.244s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.obj
+[24.301s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.stl
+[24.360s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_collision.stl
+[24.404s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.mtl
+[24.480s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.obj
+[24.572s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.stl
+[24.599s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_caster_collision.stl
+[24.628s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_caster_visual.stl
+[24.715s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_collision.stl
+[24.842s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.mtl
+[24.957s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.obj
+[25.109s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.stl
+[25.212s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_handle_collision.stl
+[25.336s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_handle_visual.stl
+[25.438s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_collision.stl
+[25.602s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.mtl
+[25.694s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.obj
+[25.825s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.stl
+[25.937s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pedal_collision.stl
+[26.043s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pedal_visual.stl
+[26.186s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_collision.stl
+[26.272s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.mtl
+[26.379s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.obj
+[26.532s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.stl
+[26.637s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_collision.stl
+[26.743s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.mtl
+[26.857s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.obj
+[26.976s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.stl
+[27.133s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_collision.stl
+[27.249s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.mtl
+[27.318s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.obj
+[27.453s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.stl
+[27.564s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_collision.stl
+[27.633s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.mtl
+[27.732s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.obj
+[27.864s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.stl
+[28.118s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/emptyworld.world
+[28.190s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.gazebo
+[28.331s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.urdf
+[28.451s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.xacro
+[28.628s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/package_run_dependencies/wheelchair_description
+[28.742s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/parent_prefix_path/wheelchair_description
+[28.985s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/ament_prefix_path.sh
+[29.147s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/ament_prefix_path.dsv
+[29.277s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/path.sh
+[29.424s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/path.dsv
+[29.482s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.bash
+[29.579s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.sh
+[29.738s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.zsh
+[29.896s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.dsv
+[30.020s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/package.dsv
+[30.200s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/packages/wheelchair_description
+[30.284s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/cmake/wheelchair_descriptionConfig.cmake
+[30.417s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/cmake/wheelchair_descriptionConfig-version.cmake
+[30.570s] -- Symlinking: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/package.xml
+[30.691s] Invoked command in '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description

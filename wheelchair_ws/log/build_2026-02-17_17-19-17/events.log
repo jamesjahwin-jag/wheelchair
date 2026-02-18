@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.000923] (wheelchair_description) JobQueued: {'identifier': 'wheelchair_description', 'dependencies': OrderedDict()}
+[0.001453] (wheelchair_description) JobStarted: {'identifier': 'wheelchair_description'}
+[0.095120] (-) TimerEvent: {}
+[0.115801] (wheelchair_description) JobProgress: {'identifier': 'wheelchair_description', 'progress': 'cmake'}
+[0.195308] (-) TimerEvent: {}
+[0.221856] (wheelchair_description) JobProgress: {'identifier': 'wheelchair_description', 'progress': 'build'}
+[0.242340] (wheelchair_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description', '--', '-j12', '-l12'], 'cwd': '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/jahwinjames/ardupilot_gazebo/build:/home/jahwinjames/ardupilot_gazebo/build:/home/jahwinjames/ardupilot_gazebo/build:'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:'), ('USER', 'jahwinjames'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jahwinjames'), ('OLDPWD', '/mnt/c/Users/USER/Documents/wheelchair'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jahwinjames'), ('NAME', 'The-Jaguar'), ('WSL_INTEROP', '/run/WSL/332_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/lib/ccache:/home/jahwinjames/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/jahwinjames/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Users/USER/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/USER/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/USER/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/USER/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/USER/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/opt/xtensa-esp-elf/bin/'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install/wheelchair_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install/wheelchair_description:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.295437] (-) TimerEvent: {}
+[0.396621] (-) TimerEvent: {}
+[0.497910] (-) TimerEvent: {}
+[0.565965] (wheelchair_description) CommandEnded: {'returncode': 0}
+[0.598148] (-) TimerEvent: {}
+[0.653986] (wheelchair_description) JobProgress: {'identifier': 'wheelchair_description', 'progress': 'install'}
+[0.682963] (wheelchair_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description'], 'cwd': '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description', 'env': OrderedDict([('GZ_SIM_SYSTEM_PLUGIN_PATH', '/home/jahwinjames/ardupilot_gazebo/build:/home/jahwinjames/ardupilot_gazebo/build:/home/jahwinjames/ardupilot_gazebo/build:'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:/home/jahwinjames/ardupilot_gazebo/models:/home/jahwinjames/ardupilot_gazebo/worlds:'), ('USER', 'jahwinjames'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/jahwinjames'), ('OLDPWD', '/mnt/c/Users/USER/Documents/wheelchair'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jahwinjames'), ('NAME', 'The-Jaguar'), ('WSL_INTEROP', '/run/WSL/332_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/lib/ccache:/home/jahwinjames/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/jahwinjames/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Users/USER/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/USER/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/USER/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/USER/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/USER/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/opt/xtensa-esp-elf/bin/'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install/wheelchair_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/build/wheelchair_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/jahwinjames/wheelchair/wheelchair_ws/install/wheelchair_description:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.698332] (-) TimerEvent: {}
+[0.700917] (wheelchair_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.763767] (wheelchair_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.798511] (-) TimerEvent: {}
+[0.899538] (-) TimerEvent: {}
+[0.917266] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//launch/wheelchair_gazebo.launch.py\n'}
+[0.999666] (-) TimerEvent: {}
+[1.100652] (-) TimerEvent: {}
+[1.201923] (-) TimerEvent: {}
+[1.303352] (-) TimerEvent: {}
+[1.404663] (-) TimerEvent: {}
+[1.505506] (-) TimerEvent: {}
+[1.606231] (-) TimerEvent: {}
+[1.710489] (-) TimerEvent: {}
+[1.818231] (-) TimerEvent: {}
+[1.919537] (-) TimerEvent: {}
+[2.020960] (-) TimerEvent: {}
+[2.122152] (-) TimerEvent: {}
+[2.183614] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_collision.stl\n'}
+[2.222307] (-) TimerEvent: {}
+[2.287678] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.mtl\n'}
+[2.322561] (-) TimerEvent: {}
+[2.414023] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.obj\n'}
+[2.423160] (-) TimerEvent: {}
+[2.523755] (-) TimerEvent: {}
+[2.546690] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/back_visual.stl\n'}
+[2.623971] (-) TimerEvent: {}
+[2.641373] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_collision.stl\n'}
+[2.724085] (-) TimerEvent: {}
+[2.752666] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.mtl\n'}
+[2.824208] (-) TimerEvent: {}
+[2.872801] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.obj\n'}
+[2.924458] (-) TimerEvent: {}
+[2.990872] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/base_link_visual.stl\n'}
+[3.024789] (-) TimerEvent: {}
+[3.085767] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_collision.stl\n'}
+[3.126937] (-) TimerEvent: {}
+[3.228129] (-) TimerEvent: {}
+[3.237923] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.mtl\n'}
+[3.328190] (-) TimerEvent: {}
+[3.377971] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.obj\n'}
+[3.428362] (-) TimerEvent: {}
+[3.508954] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_left_visual.stl\n'}
+[3.529038] (-) TimerEvent: {}
+[3.630208] (-) TimerEvent: {}
+[3.635469] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_collision.stl\n'}
+[3.727617] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.mtl\n'}
+[3.730423] (-) TimerEvent: {}
+[3.799826] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.obj\n'}
+[3.830649] (-) TimerEvent: {}
+[3.899340] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/caster_right_visual.stl\n'}
+[3.930943] (-) TimerEvent: {}
+[4.016068] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_collision.stl\n'}
+[4.031133] (-) TimerEvent: {}
+[4.131993] (-) TimerEvent: {}
+[4.169797] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.mtl\n'}
+[4.232135] (-) TimerEvent: {}
+[4.272088] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.obj\n'}
+[4.332239] (-) TimerEvent: {}
+[4.359120] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/frame_visual.stl\n'}
+[4.432390] (-) TimerEvent: {}
+[4.455722] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_collision.stl\n'}
+[4.532696] (-) TimerEvent: {}
+[4.559407] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.mtl\n'}
+[4.632877] (-) TimerEvent: {}
+[4.677197] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.obj\n'}
+[4.732967] (-) TimerEvent: {}
+[4.774812] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_armrest_visual.stl\n'}
+[4.833067] (-) TimerEvent: {}
+[4.870695] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_caster_collision.stl\n'}
+[4.933228] (-) TimerEvent: {}
+[4.994122] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_caster_visual.stl\n'}
+[5.033408] (-) TimerEvent: {}
+[5.099816] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_collision.stl\n'}
+[5.133533] (-) TimerEvent: {}
+[5.160401] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.mtl\n'}
+[5.233687] (-) TimerEvent: {}
+[5.241789] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.obj\n'}
+[5.277421] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_flap_visual.stl\n'}
+[5.333832] (-) TimerEvent: {}
+[5.389030] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_handle_collision.stl\n'}
+[5.433975] (-) TimerEvent: {}
+[5.457706] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_handle_visual.stl\n'}
+[5.534144] (-) TimerEvent: {}
+[5.546635] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_collision.stl\n'}
+[5.606697] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.mtl\n'}
+[5.634224] (-) TimerEvent: {}
+[5.643766] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.obj\n'}
+[5.723254] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_panel_visual.stl\n'}
+[5.734484] (-) TimerEvent: {}
+[5.824848] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pedal_collision.stl\n'}
+[5.834595] (-) TimerEvent: {}
+[5.895145] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pedal_visual.stl\n'}
+[5.934723] (-) TimerEvent: {}
+[5.979179] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_collision.stl\n'}
+[6.034828] (-) TimerEvent: {}
+[6.087869] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.mtl\n'}
+[6.135030] (-) TimerEvent: {}
+[6.226985] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.obj\n'}
+[6.235210] (-) TimerEvent: {}
+[6.338038] (-) TimerEvent: {}
+[6.344977] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/left_pin_visual.stl\n'}
+[6.420503] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_collision.stl\n'}
+[6.438288] (-) TimerEvent: {}
+[6.501353] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.mtl\n'}
+[6.538384] (-) TimerEvent: {}
+[6.557368] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.obj\n'}
+[6.628685] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftbackwheel_visual.stl\n'}
+[6.638601] (-) TimerEvent: {}
+[6.742864] (-) TimerEvent: {}
+[6.749997] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_collision.stl\n'}
+[6.843195] (-) TimerEvent: {}
+[6.869910] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.mtl\n'}
+[6.943319] (-) TimerEvent: {}
+[7.007513] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.obj\n'}
+[7.043602] (-) TimerEvent: {}
+[7.113423] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/leftfrontwheel_visual.stl\n'}
+[7.143862] (-) TimerEvent: {}
+[7.248953] (-) TimerEvent: {}
+[7.256104] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_collision.stl\n'}
+[7.349359] (-) TimerEvent: {}
+[7.373722] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.mtl\n'}
+[7.449447] (-) TimerEvent: {}
+[7.463625] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.obj\n'}
+[7.549651] (-) TimerEvent: {}
+[7.550316] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_armrest_visual.stl\n'}
+[7.610549] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_caster_collision.stl\n'}
+[7.649874] (-) TimerEvent: {}
+[7.722040] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_caster_visual.stl\n'}
+[7.750060] (-) TimerEvent: {}
+[7.809792] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_collision.stl\n'}
+[7.850157] (-) TimerEvent: {}
+[7.868139] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.mtl\n'}
+[7.928589] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.obj\n'}
+[7.950257] (-) TimerEvent: {}
+[8.041422] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_flap_visual.stl\n'}
+[8.050447] (-) TimerEvent: {}
+[8.151152] (-) TimerEvent: {}
+[8.155865] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_handle_collision.stl\n'}
+[8.220890] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_handle_visual.stl\n'}
+[8.251292] (-) TimerEvent: {}
+[8.292399] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_collision.stl\n'}
+[8.351480] (-) TimerEvent: {}
+[8.367090] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.mtl\n'}
+[8.447114] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.obj\n'}
+[8.451660] (-) TimerEvent: {}
+[8.541367] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_panel_visual.stl\n'}
+[8.551832] (-) TimerEvent: {}
+[8.605582] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pedal_collision.stl\n'}
+[8.652045] (-) TimerEvent: {}
+[8.675319] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pedal_visual.stl\n'}
+[8.733665] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_collision.stl\n'}
+[8.752334] (-) TimerEvent: {}
+[8.762528] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.mtl\n'}
+[8.852484] (-) TimerEvent: {}
+[8.867561] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.obj\n'}
+[8.952582] (-) TimerEvent: {}
+[8.985865] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/right_pin_visual.stl\n'}
+[9.052795] (-) TimerEvent: {}
+[9.084849] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_collision.stl\n'}
+[9.152908] (-) TimerEvent: {}
+[9.174626] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.mtl\n'}
+[9.227116] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.obj\n'}
+[9.253062] (-) TimerEvent: {}
+[9.272291] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightbackwheel_visual.stl\n'}
+[9.340568] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_collision.stl\n'}
+[9.353171] (-) TimerEvent: {}
+[9.454293] (-) TimerEvent: {}
+[9.456404] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.mtl\n'}
+[9.514619] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.obj\n'}
+[9.554374] (-) TimerEvent: {}
+[9.570274] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/rightfrontwheel_visual.stl\n'}
+[9.653856] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_collision.stl\n'}
+[9.655794] (-) TimerEvent: {}
+[9.716123] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.mtl\n'}
+[9.755912] (-) TimerEvent: {}
+[9.835310] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.obj\n'}
+[9.856162] (-) TimerEvent: {}
+[9.957568] (-) TimerEvent: {}
+[9.959503] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//meshes/seat_visual.stl\n'}
+[10.057697] (-) TimerEvent: {}
+[10.082083] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.gazebo\n'}
+[10.144590] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.urdf\n'}
+[10.157885] (-) TimerEvent: {}
+[10.258353] (-) TimerEvent: {}
+[10.261135] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description//urdf/wheelchairtest.xacro\n'}
+[10.357320] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/package_run_dependencies/wheelchair_description\n'}
+[10.358407] (-) TimerEvent: {}
+[10.402342] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/parent_prefix_path/wheelchair_description\n'}
+[10.442445] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/ament_prefix_path.sh\n'}
+[10.458578] (-) TimerEvent: {}
+[10.529688] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/ament_prefix_path.dsv\n'}
+[10.558771] (-) TimerEvent: {}
+[10.598538] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/path.sh\n'}
+[10.659094] (-) TimerEvent: {}
+[10.731153] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/environment/path.dsv\n'}
+[10.759343] (-) TimerEvent: {}
+[10.785201] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.bash\n'}
+[10.859467] (-) TimerEvent: {}
+[10.872098] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.sh\n'}
+[10.935973] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.zsh\n'}
+[10.959809] (-) TimerEvent: {}
+[11.030578] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/local_setup.dsv\n'}
+[11.059933] (-) TimerEvent: {}
+[11.126150] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/package.dsv\n'}
+[11.160064] (-) TimerEvent: {}
+[11.260866] (-) TimerEvent: {}
+[11.315339] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/ament_index/resource_index/packages/wheelchair_description\n'}
+[11.361088] (-) TimerEvent: {}
+[11.432376] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/cmake/wheelchair_descriptionConfig.cmake\n'}
+[11.461472] (-) TimerEvent: {}
+[11.487201] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/cmake/wheelchair_descriptionConfig-version.cmake\n'}
+[11.538067] (wheelchair_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/USER/Documents/wheelchair/wheelchair_ws/install/wheelchair_description/share/wheelchair_description/package.xml\n'}
+[11.544038] (wheelchair_description) CommandEnded: {'returncode': 0}
+[11.561588] (-) TimerEvent: {}
+[11.661989] (-) TimerEvent: {}
+[11.762660] (-) TimerEvent: {}
+[11.863342] (-) TimerEvent: {}
+[11.964374] (-) TimerEvent: {}
+[12.066272] (-) TimerEvent: {}
+[12.167296] (-) TimerEvent: {}
+[12.268704] (-) TimerEvent: {}
+[12.369926] (-) TimerEvent: {}
+[12.470692] (-) TimerEvent: {}
+[12.572011] (-) TimerEvent: {}
+[12.672731] (-) TimerEvent: {}
+[12.773345] (-) TimerEvent: {}
+[12.873920] (-) TimerEvent: {}
+[12.978814] (-) TimerEvent: {}
+[13.080270] (-) TimerEvent: {}
+[13.183338] (-) TimerEvent: {}
+[13.276632] (wheelchair_description) JobEnded: {'identifier': 'wheelchair_description', 'rc': 0}
+[13.332239] (-) TimerEvent: {}
+[13.333823] (-) EventReactorShutdown: {}

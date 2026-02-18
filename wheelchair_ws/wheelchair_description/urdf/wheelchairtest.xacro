@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<!-- XACRO DESCRIPTION OF WHEELCHAIR -->
+<!-- Made by Jahwin James James -->
+<!-- With reference to the URDF created from Blender 4.5.6 using the Linkforge Extension: https://github.com/arounamounchili/linkforge -->
+<!-- On 17/02/2026 12:00 -->
+
+<robot name="wheelchair" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="mesh_path" value="package://wheelchair_description/meshes" />
+
+<!-- Defining colours -->
+  <material name="frame_gray">
+    <color rgba="0.705882 0.705882 0.713726 1" />
+  </material>
+  <material name="dark_gray">
+    <color rgba="0.329412 0.329412 0.329412 1" />
+  </material>
+  <material name="seat_red">
+    <color rgba="0.419608 0.156863 0.145098 1" />
+  </material>
+  <material name="accent_red">
+    <color rgba="0.576471 0.047059 0 1" />
+  </material>
+  <material name="pin_silver">
+    <color rgba="0.8 0.8 0.8 1" />
+  </material>
+  <material name="tire_black">
+    <color rgba="0.196078 0.196078 0.196078 1" />
+  </material>
+
+<!-- Template the link (wheels, specifically) descriptions follow -->
+  <xacro:macro name="wheel_link" params="name mesh material origin_xyz">
+    <link name="${name}">
+      <visual>
+        <origin xyz="${origin_xyz}" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_path}/${mesh}.stl" />
+        </geometry>
+        <material name="${material}" />
+      </visual>
+      <collision>
+        <origin xyz="${origin_xyz}" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_path}/${mesh.replace('visual', 'collision')}.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="1" />
+        <inertia ixx="0.04" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02" />
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="wheel_link2" params="name mesh material origin_xyz">
+    <link name="${name}">
+      <visual>
+        <origin xyz="${origin_xyz}" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_path}/${mesh}.stl" />
+        </geometry>
+        <material name="${material}" />
+      </visual>
+      <collision>
+        <origin xyz="${origin_xyz}" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="${mesh_path}/${mesh.replace('visual', 'collision')}.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="1" />
+        <inertia ixx="0.04" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02" />
+      </inertial>
+    </link>
+  </xacro:macro>
+
+<!-- LINKS -->
+<!-- Wheelchair Frame aka Base -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.2159 -0.455574 -0.326007" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/base_link_visual.stl" />
+      </geometry>
+      <material name="frame_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0.2159 -0.455578 -0.326007" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/base_link_collision.stl" /></geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.089727" ixy="0" ixz="0" iyy="0.062793" iyz="0.020276" izz="0.072745" />
+    </inertial>
+  </link>
+
+<!-- Wheelchair Seat -->
+  <link name="seat">
+    <visual>
+      <origin xyz="0.216573 -0.558772 -0.439478" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/seat_visual.stl" /></geometry>
+      <material name="seat_red" />
+    </visual>
+    <collision>
+      <origin xyz="0.216573 -0.558772 -0.439478" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/seat_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.012154" ixy="0" ixz="-0.000008" iyy="0.010543" iyz="0" izz="0.022582" />
+    </inertial>
+  </link>
+
+<!-- Wheelchair Back -->
+  <link name="back">
+    <visual>
+      <origin xyz="0.224352 -0.79993 -0.177682" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/back_visual.stl" />
+      </geometry>
+      <material name="seat_red" />
+    </visual>
+    <collision>
+      <origin xyz="0.224352 -0.79993 -0.177682" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/back_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.013019" ixy="0.000002" ixz="-0.000024" iyy="0.024066" iyz="0.000649" izz="0.011195" />
+    </inertial>
+  </link>
+
+<!-- Panels -->
+<link name="right_panel">
+    <visual>
+      <origin xyz="0.453228 -0.554478 -0.282352" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/right_panel_visual.stl" /></geometry>
+      <material name="frame_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0.453228 -0.554478 -0.282352" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/right_panel_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.022916" ixy="0" ixz="0" iyy="0.007613" iyz="0.001771" izz="0.015384" />
+    </inertial>
+  </link>
+
+<link name="left_panel">
+    <visual>
+      <origin xyz="-0.021428 -0.554478 -0.282352" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/left_panel_visual.stl" /></geometry>
+      <material name="frame_gray" />
+    </visual>
+    <collision>
+      <origin xyz="-0.021428 -0.554478 -0.282352" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_panel_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.022916" ixy="0" ixz="0" iyy="0.007613" iyz="0.001771" izz="0.015384" />
+    </inertial>
+  </link>
+
+<!-- Pedals aka Footplates -->
+<link name="right_pedal">
+    <visual>
+      <origin xyz="0.34925 -0.057806 -0.687826" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/right_pedal_visual.stl" />
+      </geometry>
+      <material name="dark_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0.34925 -0.057806 -0.687826" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/right_pedal_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.001777" ixy="0.000099" ixz="-0.000273" iyy="0.003236" iyz="-0.000468" izz="0.00435" />
+    </inertial>
+  </link>
+
+  <link name="left_pedal">
+    <visual>
+      <origin xyz="0.08255 -0.057806 -0.687826" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_pedal_visual.stl" />
+      </geometry>
+      <material name="dark_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0.08255 -0.057806 -0.687826" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_pedal_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.001777" ixy="-0.000099" ixz="0.000273" iyy="0.003236" iyz="-0.000468" izz="0.00435" />
+    </inertial>
+  </link>
+
+<!-- Handles -->
+<link name="right_handle">
+    <visual>
+      <origin xyz="0.4318 -0.878328 0.067693" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/right_handle_visual.stl" /></geometry>
+      <material name="accent_red" />
+    </visual>
+    <collision>
+      <origin xyz="0.4318 -0.878328 0.067693" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/right_handle_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.000804" ixy="0" ixz="0" iyy="0.000102" iyz="0" izz="0.000804" />
+    </inertial>
+  </link>
+
+  <link name="left_handle">
+    <visual>
+      <origin xyz="0 -0.878328 0.067693" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_handle_visual.stl" />
+      </geometry>
+      <material name="accent_red" />
+    </visual>
+    <collision>
+      <origin xyz="0 -0.878328 0.067693" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_handle_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.000804" ixy="0" ixz="0" iyy="0.000102" iyz="0" izz="0.000804" />
+    </inertial>
+  </link>
+
+<!-- Casters -->
+  <link name="right_caster">
+    <visual>
+      <origin xyz="0.4318 -0.293335 -0.633983" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/right_caster_visual.stl" /></geometry>
+      <material name="frame_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0.4318 -0.293335 -0.633983" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/right_caster_collision.stl" /></geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.002167" ixy="0" ixz="0" iyy="0.002068" iyz="0.000541" izz="0.000631" />
+    </inertial>
+  </link>
+
+  <link name="left_caster">
+    <visual>
+      <origin xyz="0 -0.293335 -0.633983" rpy="0 0 0" />
+      <geometry><mesh filename="${mesh_path}/left_caster_visual.stl" /></geometry>
+      <material name="frame_gray" />
+    </visual>
+    <collision>
+      <origin xyz="0 -0.293335 -0.633983" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_path}/left_caster_collision.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <inertia ixx="0.002167" ixy="0" ixz="0" iyy="0.002068" iyz="0.000541" izz="0.000631" />
+    </inertial>
+  </link>
+
+<!-- Wheels!!!! -->
+  <xacro:wheel_link name="rightbackwheel" mesh="rightbackwheel_visual" material="tire_black" origin_xyz="-0.028701 -0.000077 -0.000413" />
+  <xacro:wheel_link name="leftbackwheel" mesh="leftbackwheel_visual" material="tire_black" origin_xyz="0.028684 0.000118 -0.000308" />
+  <xacro:wheel_link2 name="leftfrontwheel" mesh="leftfrontwheel_visual" material="tire_black" origin_xyz="0 0 -0.000052" />
+  <xacro:wheel_link2 name="rightfrontwheel" mesh="rightfrontwheel_visual" material="tire_black" origin_xyz="0.000002 0 -0.000052" />
+
+<!-- JOINTS -->
+  <joint name="seat_joint" type="fixed">
+    <parent link="base_link" /><child link="seat" />
+  </joint>
+
+  <joint name="back_joint" type="fixed">
+    <parent link="base_link" /><child link="back" />
+  </joint>
+
+  <joint name="right_caster_joint" type="fixed">
+    <parent link="base_link" /><child link="right_caster" />
+  </joint>
+
+  <joint name="left_caster_joint" type="fixed">
+    <parent link="base_link" /><child link="left_caster" />
+  </joint>
+  
+  <joint name="right_panel_joint" type="fixed">
+    <parent link="base_link" /><child link="right_panel" />
+  </joint>
+
+  <joint name="left_panel_joint" type="fixed">
+    <parent link="base_link" /><child link="left_panel" />
+  </joint>
+
+  <joint name="right_pedal_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="right_pedal" />
+  </joint>
+
+  <joint name="left_pedal_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="left_pedal" />
+  </joint>
+
+  <joint name="right_handle_joint" type="fixed">
+    <parent link="base_link" /><child link="right_handle" />
+  </joint>
+
+  <joint name="left_handle_joint" type="fixed">
+    <parent link="base_link" /><child link="left_handle" />
+  </joint>
+
+  <joint name="rightbackwheel_joint" type="continuous">
+    <origin xyz="0.52825 -0.7703 -0.516094" rpy="0 0 0" />
+    <parent link="base_link" /><child link="rightbackwheel" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" velocity="100" />
+  </joint>
+
+  <joint name="leftbackwheel_joint" type="continuous">
+    <origin xyz="-0.096433 -0.770495 -0.516199" rpy="0 0 0" />
+    <parent link="base_link" /><child link="leftbackwheel" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" velocity="100" />
+  </joint>
+
+  <joint name="leftfrontwheel_joint" type="continuous">
+    <origin xyz="0 -0.266347 -0.713306" rpy="0 0 0" />
+    <parent link="left_caster" /><child link="leftfrontwheel" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" velocity="100" />
+  </joint>
+
+  <joint name="rightfrontwheel_joint" type="continuous">
+    <origin xyz="0.431798 -0.266347 -0.713306" rpy="0 0 0" />
+    <parent link="right_caster" /><child link="rightfrontwheel" />
+    <axis xyz="1 0 0" />
+    <limit effort="100" velocity="100" />
+  </joint>
+
+<!-- Gazebo descriptions -->
+<gazebo reference="base_link">
+<mu1>1.0</mu1>
+<mu2>1.0</mu2>
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="right_panel">
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="left_panel">
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="right_caster">
+<mu1>0.0</mu1>
+<mu2>0.0</mu2>
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="left_caster">
+<mu1>0.0</mu1>
+<mu2>0.0</mu2>
+<material>Gazebo/Grey</material>
+</gazebo>
+
+<gazebo reference="seat">
+<material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="back">
+<material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="right_handle">
+<material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="left_handle">
+<material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="right_pedal">
+<material>Gazebo/DarkGrey</material>
+</gazebo>
+
+<gazebo reference="left_pedal">
+<material>Gazebo/DarkGrey</material>
+</gazebo>
+
+<gazebo reference="rightbackwheel">
+<mu1>1.0</mu1>
+<mu2>1.0</mu2>
+<material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="leftbackwheel">
+<mu1>1.0</mu1>
+<mu2>1.0</mu2>
+<material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="rightfrontwheel">
+<mu1>0.0</mu1>
+<mu2>0.0</mu2>
+<material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="leftfrontwheel">
+<mu1>0.0</mu1>
+<mu2>0.0</mu2>
+<material>Gazebo/Black</material>
+</gazebo>
+
+<!-- Controller for the differential drive robot -->
+<gazebo>
+    <plugin name="wheelchair_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+      <namespace> </namespace>
+      </ros>
+
+      <!-- backwheels -->
+      <left_joint>leftbackwheel_joint</left_joint>
+      <right_joint>rightbackwheel_joint</right_joint>
+
+      <!-- kinematics -->
+      <wheel_separation>0.624</wheel_separation> 
+      <wheel_diameter>0.6</wheel_diameter>
+      <max_wheel_torque>200</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+      <!-- output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+
+    </plugin>
+</gazebo>
+
+</robot>
